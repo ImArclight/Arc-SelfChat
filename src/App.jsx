@@ -64,7 +64,7 @@ export default function Screen() {
                     </h1>
                 </div>
 
-                This <span className='text-blue-400'><a href="https://github.com/ImArclight">Arc-SelfChat</a></span> is an app made so the users can chat or taking a notes here privately. All the messages are stored on users computer and users can clear all the message by clicking Delete button.
+                This <span className='text-blue-400'><a href="https://github.com/ImArclight">Arc-SelfChat</a></span> is an app made so the users can chat or taking a notes here privately. All the messages are stored on users computer local storage and users can clear all the message by clicking Delete button.
             </div>
         </div>
       <div className='mb-[100px] w-[350px] md:w-[600px] md:ml-10'>
