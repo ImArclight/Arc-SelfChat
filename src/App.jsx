@@ -55,7 +55,7 @@ export default function Screen() {
     //I hate css
     <div className='h-screen overflow-y-scroll'>
         <div className='w-[350px] md:w-[600px] md:ml-10'>
-            <div className='rounded-2xl text-white bg-gray-700 md:m-10 p-5 m-8 w-[100%] max-w-[400px] break-words'>
+            <div className='rounded-2xl text-white bg-gray-700 md:m-10 p-5 m-8 max-w-[350px] break-words'>
 
                 <div className='flex mb-4'>
                     <img src={logo} className='w-10 h-10 mr-4 rounded-[50%]' alt="" />
@@ -70,7 +70,7 @@ export default function Screen() {
       <div className='mb-[100px] w-[350px] md:w-[600px] md:ml-10'>
         {/*adding your message to chat-box-bubble(?)*/}
         {messages.map((msg, index) => (
-          <div key={index} className="rounded-2xl text-white bg-gray-700 p-5 m-8 md:m-10 w-[100%] max-w-[400px] break-words">
+          <div key={index} className="rounded-2xl text-white bg-gray-700 p-5 m-8 md:m-10 max-w-[350px] break-words">
             {/* planning to add users name after inputting it but maybe sometimes. If you still see this then I haven't done it yet */}
             <div className='flex mb-4'>
                     <img src={default1} className='w-10 h-10 mr-4 rounded-[50%]' alt="" />
