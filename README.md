@@ -6,4 +6,4 @@ Arc-SelfChat is an app made so the users can chat or taking a notes here private
 
 <br />
 
-<img src="src/assets/ex2.png" />
+<img src="src/assets/ex2.png" width="800" />
