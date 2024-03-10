@@ -39,8 +39,11 @@ export default function Screen() {
 
   //delete function to clear all chat message on users local storage
   const handleDeleteMsg = () => {
-    localStorage.removeItem('chat-msg');
-    setMessages([]);
+    const confirmDelete = window.confirm('Are you sure want to delete all messages?'); //adding alert confirm message before deleting all messages 
+    if (confirmDelete) {
+      localStorage.removeItem('chat-msg');
+      setMessages([]);
+    }
   }
 
   // Key function so users can send the message by clicking the enter button
@@ -64,7 +67,7 @@ export default function Screen() {
                     </h1>
                 </div>
 
-                This <span className='text-blue-400'><a href="https://github.com/ImArclight">Arc-SelfChat</a></span> is an app made so the users can chat or taking a notes here privately. All the messages are stored on users computer local storage and users can clear all the message by clicking Delete button.
+                This <span className='text-blue-400'><a href="https://github.com/ImArclight">Arc-SelfChat</a></span> is an app made so the users can chat or taking a notes here privately. All the messages are stored on users computer and users can clear all the message by clicking Delete button.
             </div>
         </div>
       <div className='mb-[100px] w-[350px] md:w-[600px] md:ml-10'>
@@ -104,8 +107,8 @@ export default function Screen() {
             className='appearance-none border border-gray-300 h-10 bg-gray-500 rounded-lg py-2 px-4 text-white'
             onClick={handleDeleteMsg} //Delete btn function to clear all the message
             >
-                Delete
-            </button>
+             Delete
+          </button>
       </div>
     </div>
   );
